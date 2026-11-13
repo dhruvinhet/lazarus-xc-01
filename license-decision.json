@@ -1,0 +1,17 @@
+{
+ "v": 1,
+ "source": "schemaio/schema-node-client",
+ "sha": "5dc6653f048431257f8187eb8b802a6cd8a951fb",
+ "commit_date": "2020-01-21T12:49:04-07:00",
+ "github_detected_spdx": "MIT",
+ "accepted": true,
+ "reasons": [],
+ "license_file": "LICENSE",
+ "license_sha256": "db9d23a7b6763b99624d89b5817322f6b65f2cde8447a347df362430f5a2cfd5",
+ "license_bytes": 1071,
+ "copyright_lines": [
+  "Copyright (c) 2014-2015 Schema"
+ ],
+ "package_json_license": "MIT",
+ "notice_files": []
+}
