@@ -1,0 +1,96 @@
+$ mocha lib/*.test.js
+[exit 0 signal  190ms]
+--- stdout
+
+
+  Cache
+    #constructor
+      ✓ builds params from defaults
+      ✓ builds params from options
+      ✓ throws an error on invalid storage
+    #get
+      ✓ returns null when cache index not found
+      ✓ returns response object when cache index found
+    #getKey
+      ✓ returns a predictable key for request args
+    #getPath
+      ✓ returns a cache path with arg
+      ✓ returns a cache path with multiple args
+      ✓ returns a cache path with path param prepended
+    #getVersions
+      ✓ sets and returns version cache
+      ✓ sets and returns version cached earlier
+    #getIndex
+      ✓ sets and returns index cache
+      ✓ sets and returns index cached earlier
+    #put
+      ✓ sets index, version and result cache
+    #putIndex
+      ✓ sets index cache with collection version and size
+      ✓ resets existing item in index cache
+    #remove
+      ✓ removes an entry from result cache
+
+  Client
+    #constructor
+      ✓ construct without init
+      ✓ init with options - callback
+      ✓ init with options + callback
+    #init
+      ✓ initialize params with defaults
+      ✓ initialize params without cache
+      ✓ initialize params with options
+      ✓ initialize params with credentials + options
+      ✓ initialize params route
+      ✓ initialize throws without client id
+      ✓ initialize throws without client key
+    #connect
+      ✓ connect params
+      ✓ connect with callback
+      ✓ proxy connection events
+    #request
+      ✓ connect on first request
+      ✓ init cache
+      ✓ init without cache
+      ✓ build request headers - authed
+      ✓ build request headers + authed
+      ✓ build request headers with default data
+      ✓ handle result $auth
+      ✓ handle result $auth + $end retry
+      ✓ handle result response
+      ✓ resolves promise
+      ✓ rejects promise with error
+      ✓ calls back
+      ✓ resolves promised data (object)
+      ✓ resolves promised data (array)
+    #respond
+      ✓ respond with resource data
+      ✓ respond with null data
+      ✓ respond with error
+      ✓ respond with nothing
+    #get/put/post/delete
+      ✓ get request
+      ✓ put request
+      ✓ post request
+      ✓ delete request
+      get request caching behaviour
+        ✓ returns (error, response) when retrieving from cache
+        ✓ fires callback when no request params present (callback 2nd param)
+    #auth
+      ✓ connect on first request
+      ✓ request nonce if not provided
+      ✓ request auth with credentials encrypted by nonce
+    #close
+      ✓ close server connection
+    #create
+      ✓ return a new client instance
+    #createResource
+      ✓ return a new collection resource
+      ✓ return a new record resource
+
+
+  61 passing (32ms)
+
+
+--- stderr
+

@@ -1,0 +1,105 @@
+{
+ "v": 1,
+ "started": "2026-11-13T06:59:17.864Z",
+ "target_runtime": "v26.13.1",
+ "target_major_expected": 26,
+ "target_is_expected": true,
+ "steps": [
+  {
+   "name": "install-locked",
+   "exit": 0,
+   "ms": 3130
+  },
+  {
+   "name": "historical-test-1",
+   "exit": 0,
+   "ms": 190
+  },
+  {
+   "name": "historical-mocha-json-1",
+   "exit": 0,
+   "ms": 180
+  },
+  {
+   "name": "historical-test-2",
+   "exit": 0,
+   "ms": 185
+  },
+  {
+   "name": "historical-mocha-json-2",
+   "exit": 0,
+   "ms": 182
+  },
+  {
+   "name": "today-install",
+   "exit": 0,
+   "ms": 1235
+  },
+  {
+   "name": "today-test",
+   "exit": 0,
+   "ms": 157
+  }
+ ],
+ "source": {
+  "source": "schemaio/schema-node-client",
+  "sha": "5dc6653f048431257f8187eb8b802a6cd8a951fb",
+  "commit_date": "2020-01-21T12:49:04-07:00",
+  "symlinks_removed": 0,
+  "spdx": "MIT",
+  "license_file": "LICENSE",
+  "license_sha256": "db9d23a7b6763b99624d89b5817322f6b65f2cde8447a347df362430f5a2cfd5",
+  "notice_files": [],
+  "copyright_lines": [
+   "Copyright (c) 2014-2015 Schema"
+  ]
+ },
+ "test_script": "mocha lib/*.test.js",
+ "runtime_choice": {
+  "line": "8",
+  "rule": "version file .nvmrc"
+ },
+ "runtime": {
+  "line": "8",
+  "version": "8.17.0",
+  "file": "node-v8.17.0-linux-x64.tar.gz",
+  "source": "https://nodejs.org/dist/v8.17.0/node-v8.17.0-linux-x64.tar.gz",
+  "checksum_source": "https://nodejs.org/dist/v8.17.0/SHASUMS256.txt",
+  "expected_sha256": "8b2c9e1f84317c4b02736c4c50db4dd2cd6c4f0ba910fa81f887c8c9294af596",
+  "actual_sha256": "8b2c9e1f84317c4b02736c4c50db4dd2cd6c4f0ba910fa81f887c8c9294af596",
+  "verification": "verified",
+  "verified": true,
+  "reports": "v8.17.0"
+ },
+ "install": {
+  "lock_file": "package-lock.json",
+  "method": "lock file",
+  "packages": 195,
+  "without_integrity": 0,
+  "install_scripts_skipped": 0,
+  "non_registry": 0
+ },
+ "historical_runs": [
+  {
+   "test_script_exit": 0,
+   "structured": true,
+   "passes": 61,
+   "failures": 0
+  },
+  {
+   "test_script_exit": 0,
+   "structured": true,
+   "passes": 61,
+   "failures": 0
+  }
+ ],
+ "stable_passing_tests": 61,
+ "level": "H1",
+ "today": {
+  "runtime": "v26.13.1",
+  "install_exit": 0,
+  "test_exit": 0,
+  "broken_today": false
+ },
+ "finished": "2026-11-13T06:59:23.815Z"
+}

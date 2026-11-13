@@ -1,0 +1,755 @@
+$ mocha --reporter json  lib/*.test.js
+[exit 0 signal  181ms]
+--- stdout
+{
+  "stats": {
+    "suites": 22,
+    "tests": 61,
+    "passes": 61,
+    "pending": 0,
+    "failures": 0,
+    "start": "2026-11-13T06:59:22.382Z",
+    "end": "2026-11-13T06:59:22.410Z",
+    "duration": 28
+  },
+  "tests": [
+    {
+      "title": "builds params from defaults",
+      "fullTitle": "Cache #constructor builds params from defaults",
+      "duration": 1,
+      "err": {}
+    },
+    {
+      "title": "builds params from options",
+      "fullTitle": "Cache #constructor builds params from options",
+      "duration": 0,
+      "err": {}
+    },
+    {
+      "title": "throws an error on invalid storage",
+      "fullTitle": "Cache #constructor throws an error on invalid storage",
+      "duration": 0,
+      "err": {}
+    },
+    {
+      "title": "returns null when cache index not found",
+      "fullTitle": "Cache #get returns null when cache index not found",
+      "duration": 0,
+      "err": {}
+    },
+    {
+      "title": "returns response object when cache index found",
+      "fullTitle": "Cache #get returns response object when cache index found",
+      "duration": 1,
+      "err": {}
+    },
+    {
+      "title": "returns a predictable key for request args",
+      "fullTitle": "Cache #getKey returns a predictable key for request args",
+      "duration": 0,
+      "err": {}
+    },
+    {
+      "title": "returns a cache path with arg",
+      "fullTitle": "Cache #getPath returns a cache path with arg",
+      "duration": 0,
+      "err": {}
+    },
+    {
+      "title": "returns a cache path with multiple args",
+      "fullTitle": "Cache #getPath returns a cache path with multiple args",
+      "duration": 0,
+      "err": {}
+    },
+    {
+      "title": "returns a cache path with path param prepended",
+      "fullTitle": "Cache #getPath returns a cache path with path param prepended",
+      "duration": 0,
+      "err": {}
+    },
+    {
+      "title": "sets and returns version cache",
+      "fullTitle": "Cache #getVersions sets and returns version cache",
+      "duration": 0,
+      "err": {}
+    },
+    {
+      "title": "sets and returns version cached earlier",
+      "fullTitle": "Cache #getVersions sets and returns version cached earlier",
+      "duration": 0,
+      "err": {}
+    },
+    {
+      "title": "sets and returns index cache",
+      "fullTitle": "Cache #getIndex sets and returns index cache",
+      "duration": 0,
+      "err": {}
+    },
+    {
+      "title": "sets and returns index cached earlier",
+      "fullTitle": "Cache #getIndex sets and returns index cached earlier",
+      "duration": 0,
+      "err": {}
+    },
+    {
+      "title": "sets index, version and result cache",
+      "fullTitle": "Cache #put sets index, version and result cache",
+      "duration": 0,
+      "err": {}
+    },
+    {
+      "title": "sets index cache with collection version and size",
+      "fullTitle": "Cache #putIndex sets index cache with collection version and size",
+      "duration": 0,
+      "err": {}
+    },
+    {
+      "title": "resets existing item in index cache",
+      "fullTitle": "Cache #putIndex resets existing item in index cache",
+      "duration": 0,
+      "err": {}
+    },
+    {
+      "title": "removes an entry from result cache",
+      "fullTitle": "Cache #remove removes an entry from result cache",
+      "duration": 0,
+      "err": {}
+    },
+    {
+      "title": "construct without init",
+      "fullTitle": "Client #constructor construct without init",
+      "duration": 0,
+      "err": {}
+    },
+    {
+      "title": "init with options - callback",
+      "fullTitle": "Client #constructor init with options - callback",
+      "duration": 0,
+      "err": {}
+    },
+    {
+      "title": "init with options + callback",
+      "fullTitle": "Client #constructor init with options + callback",
+      "duration": 0,
+      "err": {}
+    },
+    {
+      "title": "initialize params with defaults",
+      "fullTitle": "Client #init initialize params with defaults",
+      "duration": 0,
+      "err": {}
+    },
+    {
+      "title": "initialize params without cache",
+      "fullTitle": "Client #init initialize params without cache",
+      "duration": 0,
+      "err": {}
+    },
+    {
+      "title": "initialize params with options",
+      "fullTitle": "Client #init initialize params with options",
+      "duration": 0,
+      "err": {}
+    },
+    {
+      "title": "initialize params with credentials + options",
+      "fullTitle": "Client #init initialize params with credentials + options",
+      "duration": 0,
+      "err": {}
+    },
+    {
+      "title": "initialize params route",
+      "fullTitle": "Client #init initialize params route",
+      "duration": 0,
+      "err": {}
+    },
+    {
+      "title": "initialize throws without client id",
+      "fullTitle": "Client #init initialize throws without client id",
+      "duration": 0,
+      "err": {}
+    },
+    {
+      "title": "initialize throws without client key",
+      "fullTitle": "Client #init initialize throws without client key",
+      "duration": 0,
+      "err": {}
+    },
+    {
+      "title": "connect params",
+      "fullTitle": "Client #connect connect params",
+      "duration": 1,
+      "err": {}
+    },
+    {
+      "title": "connect with callback",
+      "fullTitle": "Client #connect connect with callback",
+      "duration": 0,
+      "err": {}
+    },
+    {
+      "title": "proxy connection events",
+      "fullTitle": "Client #connect proxy connection events",
+      "duration": 1,
+      "err": {}
+    },
+    {
+      "title": "connect on first request",
+      "fullTitle": "Client #request connect on first request",
+      "duration": 1,
+      "err": {}
+    },
+    {
+      "title": "init cache",
+      "fullTitle": "Client #request init cache",
+      "duration": 1,
+      "err": {}
+    },
+    {
+      "title": "init without cache",
+      "fullTitle": "Client #request init without cache",
+      "duration": 1,
+      "err": {}
+    },
+    {
+      "title": "build request headers - authed",
+      "fullTitle": "Client #request build request headers - authed",
+      "duration": 1,
+      "err": {}
+    },
+    {
+      "title": "build request headers + authed",
+      "fullTitle": "Client #request build request headers + authed",
+      "duration": 0,
+      "err": {}
+    },
+    {
+      "title": "build request headers with default data",
+      "fullTitle": "Client #request build request headers with default data",
+      "duration": 0,
+      "err": {}
+    },
+    {
+      "title": "handle result $auth",
+      "fullTitle": "Client #request handle result $auth",
+      "duration": 0,
+      "err": {}
+    },
+    {
+      "title": "handle result $auth + $end retry",
+      "fullTitle": "Client #request handle result $auth + $end retry",
+      "duration": 1,
+      "err": {}
+    },
+    {
+      "title": "handle result response",
+      "fullTitle": "Client #request handle result response",
+      "duration": 1,
+      "err": {}
+    },
+    {
+      "title": "resolves promise",
+      "fullTitle": "Client #request resolves promise",
+      "duration": 2,
+      "err": {}
+    },
+    {
+      "title": "rejects promise with error",
+      "fullTitle": "Client #request rejects promise with error",
+      "duration": 1,
+      "err": {}
+    },
+    {
+      "title": "calls back",
+      "fullTitle": "Client #request calls back",
+      "duration": 1,
+      "err": {}
+    },
+    {
+      "title": "resolves promised data (object)",
+      "fullTitle": "Client #request resolves promised data (object)",
+      "duration": 1,
+      "err": {}
+    },
+    {
+      "title": "resolves promised data (array)",
+      "fullTitle": "Client #request resolves promised data (array)",
+      "duration": 0,
+      "err": {}
+    },
+    {
+      "title": "respond with resource data",
+      "fullTitle": "Client #respond respond with resource data",
+      "duration": 0,
+      "err": {}
+    },
+    {
+      "title": "respond with null data",
+      "fullTitle": "Client #respond respond with null data",
+      "duration": 0,
+      "err": {}
+    },
+    {
+      "title": "respond with error",
+      "fullTitle": "Client #respond respond with error",
+      "duration": 0,
+      "err": {}
+    },
+    {
+      "title": "respond with nothing",
+      "fullTitle": "Client #respond respond with nothing",
+      "duration": 0,
+      "err": {}
+    },
+    {
+      "title": "get request",
+      "fullTitle": "Client #get/put/post/delete get request",
+      "duration": 0,
+      "err": {}
+    },
+    {
+      "title": "put request",
+      "fullTitle": "Client #get/put/post/delete put request",
+      "duration": 1,
+      "err": {}
+    },
+    {
+      "title": "post request",
+      "fullTitle": "Client #get/put/post/delete post request",
+      "duration": 0,
+      "err": {}
+    },
+    {
+      "title": "delete request",
+      "fullTitle": "Client #get/put/post/delete delete request",
+      "duration": 0,
+      "err": {}
+    },
+    {
+      "title": "returns (error, response) when retrieving from cache",
+      "fullTitle": "Client #get/put/post/delete get request caching behaviour returns (error, response) when retrieving from cache",
+      "duration": 0,
+      "err": {}
+    },
+    {
+      "title": "fires callback when no request params present (callback 2nd param)",
+      "fullTitle": "Client #get/put/post/delete get request caching behaviour fires callback when no request params present (callback 2nd param)",
+      "duration": 0,
+      "err": {}
+    },
+    {
+      "title": "connect on first request",
+      "fullTitle": "Client #auth connect on first request",
+      "duration": 0,
+      "err": {}
+    },
+    {
+      "title": "request nonce if not provided",
+      "fullTitle": "Client #auth request nonce if not provided",
+      "duration": 1,
+      "err": {}
+    },
+    {
+      "title": "request auth with credentials encrypted by nonce",
+      "fullTitle": "Client #auth request auth with credentials encrypted by nonce",
+      "duration": 1,
+      "err": {}
+    },
+    {
+      "title": "close server connection",
+      "fullTitle": "Client #close close server connection",
+      "duration": 0,
+      "err": {}
+    },
+    {
+      "title": "return a new client instance",
+      "fullTitle": "Client #create return a new client instance",
+      "duration": 0,
+      "err": {}
+    },
+    {
+      "title": "return a new collection resource",
+      "fullTitle": "Client #createResource return a new collection resource",
+      "duration": 0,
+      "err": {}
+    },
+    {
+      "title": "return a new record resource",
+      "fullTitle": "Client #createResource return a new record resource",
+      "duration": 0,
+      "err": {}
+    }
+  ],
+  "pending": [],
+  "failures": [],
+  "passes": [
+    {
+      "title": "builds params from defaults",
+      "fullTitle": "Cache #constructor builds params from defaults",
+      "duration": 1,
+      "err": {}
+    },
+    {
+      "title": "builds params from options",
+      "fullTitle": "Cache #constructor builds params from options",
+      "duration": 0,
+      "err": {}
+    },
+    {
+      "title": "throws an error on invalid storage",
+      "fullTitle": "Cache #constructor throws an error on invalid storage",
+      "duration": 0,
+      "err": {}
+    },
+    {
+      "title": "returns null when cache index not found",
+      "fullTitle": "Cache #get returns null when cache index not found",
+      "duration": 0,
+      "err": {}
+    },
+    {
+      "title": "returns response object when cache index found",
+      "fullTitle": "Cache #get returns response object when cache index found",
+      "duration": 1,
+      "err": {}
+    },
+    {
+      "title": "returns a predictable key for request args",
+      "fullTitle": "Cache #getKey returns a predictable key for request args",
+      "duration": 0,
+      "err": {}
+    },
+    {
+      "title": "returns a cache path with arg",
+      "fullTitle": "Cache #getPath returns a cache path with arg",
+      "duration": 0,
+      "err": {}
+    },
+    {
+      "title": "returns a cache path with multiple args",
+      "fullTitle": "Cache #getPath returns a cache path with multiple args",
+      "duration": 0,
+      "err": {}
+    },
+    {
+      "title": "returns a cache path with path param prepended",
+      "fullTitle": "Cache #getPath returns a cache path with path param prepended",
+      "duration": 0,
+      "err": {}
+    },
+    {
+      "title": "sets and returns version cache",
+      "fullTitle": "Cache #getVersions sets and returns version cache",
+      "duration": 0,
+      "err": {}
+    },
+    {
+      "title": "sets and returns version cached earlier",
+      "fullTitle": "Cache #getVersions sets and returns version cached earlier",
+      "duration": 0,
+      "err": {}
+    },
+    {
+      "title": "sets and returns index cache",
+      "fullTitle": "Cache #getIndex sets and returns index cache",
+      "duration": 0,
+      "err": {}
+    },
+    {
+      "title": "sets and returns index cached earlier",
+      "fullTitle": "Cache #getIndex sets and returns index cached earlier",
+      "duration": 0,
+      "err": {}
+    },
+    {
+      "title": "sets index, version and result cache",
+      "fullTitle": "Cache #put sets index, version and result cache",
+      "duration": 0,
+      "err": {}
+    },
+    {
+      "title": "sets index cache with collection version and size",
+      "fullTitle": "Cache #putIndex sets index cache with collection version and size",
+      "duration": 0,
+      "err": {}
+    },
+    {
+      "title": "resets existing item in index cache",
+      "fullTitle": "Cache #putIndex resets existing item in index cache",
+      "duration": 0,
+      "err": {}
+    },
+    {
+      "title": "removes an entry from result cache",
+      "fullTitle": "Cache #remove removes an entry from result cache",
+      "duration": 0,
+      "err": {}
+    },
+    {
+      "title": "construct without init",
+      "fullTitle": "Client #constructor construct without init",
+      "duration": 0,
+      "err": {}
+    },
+    {
+      "title": "init with options - callback",
+      "fullTitle": "Client #constructor init with options - callback",
+      "duration": 0,
+      "err": {}
+    },
+    {
+      "title": "init with options + callback",
+      "fullTitle": "Client #constructor init with options + callback",
+      "duration": 0,
+      "err": {}
+    },
+    {
+      "title": "initialize params with defaults",
+      "fullTitle": "Client #init initialize params with defaults",
+      "duration": 0,
+      "err": {}
+    },
+    {
+      "title": "initialize params without cache",
+      "fullTitle": "Client #init initialize params without cache",
+      "duration": 0,
+      "err": {}
+    },
+    {
+      "title": "initialize params with options",
+      "fullTitle": "Client #init initialize params with options",
+      "duration": 0,
+      "err": {}
+    },
+    {
+      "title": "initialize params with credentials + options",
+      "fullTitle": "Client #init initialize params with credentials + options",
+      "duration": 0,
+      "err": {}
+    },
+    {
+      "title": "initialize params route",
+      "fullTitle": "Client #init initialize params route",
+      "duration": 0,
+      "err": {}
+    },
+    {
+      "title": "initialize throws without client id",
+      "fullTitle": "Client #init initialize throws without client id",
+      "duration": 0,
+      "err": {}
+    },
+    {
+      "title": "initialize throws without client key",
+      "fullTitle": "Client #init initialize throws without client key",
+      "duration": 0,
+      "err": {}
+    },
+    {
+      "title": "connect params",
+      "fullTitle": "Client #connect connect params",
+      "duration": 1,
+      "err": {}
+    },
+    {
+      "title": "connect with callback",
+      "fullTitle": "Client #connect connect with callback",
+      "duration": 0,
+      "err": {}
+    },
+    {
+      "title": "proxy connection events",
+      "fullTitle": "Client #connect proxy connection events",
+      "duration": 1,
+      "err": {}
+    },
+    {
+      "title": "connect on first request",
+      "fullTitle": "Client #request connect on first request",
+      "duration": 1,
+      "err": {}
+    },
+    {
+      "title": "init cache",
+      "fullTitle": "Client #request init cache",
+      "duration": 1,
+      "err": {}
+    },
+    {
+      "title": "init without cache",
+      "fullTitle": "Client #request init without cache",
+      "duration": 1,
+      "err": {}
+    },
+    {
+      "title": "build request headers - authed",
+      "fullTitle": "Client #request build request headers - authed",
+      "duration": 1,
+      "err": {}
+    },
+    {
+      "title": "build request headers + authed",
+      "fullTitle": "Client #request build request headers + authed",
+      "duration": 0,
+      "err": {}
+    },
+    {
+      "title": "build request headers with default data",
+      "fullTitle": "Client #request build request headers with default data",
+      "duration": 0,
+      "err": {}
+    },
+    {
+      "title": "handle result $auth",
+      "fullTitle": "Client #request handle result $auth",
+      "duration": 0,
+      "err": {}
+    },
+    {
+      "title": "handle result $auth + $end retry",
+      "fullTitle": "Client #request handle result $auth + $end retry",
+      "duration": 1,
+      "err": {}
+    },
+    {
+      "title": "handle result response",
+      "fullTitle": "Client #request handle result response",
+      "duration": 1,
+      "err": {}
+    },
+    {
+      "title": "resolves promise",
+      "fullTitle": "Client #request resolves promise",
+      "duration": 2,
+      "err": {}
+    },
+    {
+      "title": "rejects promise with error",
+      "fullTitle": "Client #request rejects promise with error",
+      "duration": 1,
+      "err": {}
+    },
+    {
+      "title": "calls back",
+      "fullTitle": "Client #request calls back",
+      "duration": 1,
+      "err": {}
+    },
+    {
+      "title": "resolves promised data (object)",
+      "fullTitle": "Client #request resolves promised data (object)",
+      "duration": 1,
+      "err": {}
+    },
+    {
+      "title": "resolves promised data (array)",
+      "fullTitle": "Client #request resolves promised data (array)",
+      "duration": 0,
+      "err": {}
+    },
+    {
+      "title": "respond with resource data",
+      "fullTitle": "Client #respond respond with resource data",
+      "duration": 0,
+      "err": {}
+    },
+    {
+      "title": "respond with null data",
+      "fullTitle": "Client #respond respond with null data",
+      "duration": 0,
+      "err": {}
+    },
+    {
+      "title": "respond with error",
+      "fullTitle": "Client #respond respond with error",
+      "duration": 0,
+      "err": {}
+    },
+    {
+      "title": "respond with nothing",
+      "fullTitle": "Client #respond respond with nothing",
+      "duration": 0,
+      "err": {}
+    },
+    {
+      "title": "get request",
+      "fullTitle": "Client #get/put/post/delete get request",
+      "duration": 0,
+      "err": {}
+    },
+    {
+      "title": "put request",
+      "fullTitle": "Client #get/put/post/delete put request",
+      "duration": 1,
+      "err": {}
+    },
+    {
+      "title": "post request",
+      "fullTitle": "Client #get/put/post/delete post request",
+      "duration": 0,
+      "err": {}
+    },
+    {
+      "title": "delete request",
+      "fullTitle": "Client #get/put/post/delete delete request",
+      "duration": 0,
+      "err": {}
+    },
+    {
+      "title": "returns (error, response) when retrieving from cache",
+      "fullTitle": "Client #get/put/post/delete get request caching behaviour returns (error, response) when retrieving from cache",
+      "duration": 0,
+      "err": {}
+    },
+    {
+      "title": "fires callback when no request params present (callback 2nd param)",
+      "fullTitle": "Client #get/put/post/delete get request caching behaviour fires callback when no request params present (callback 2nd param)",
+      "duration": 0,
+      "err": {}
+    },
+    {
+      "title": "connect on first request",
+      "fullTitle": "Client #auth connect on first request",
+      "duration": 0,
+      "err": {}
+    },
+    {
+      "title": "request nonce if not provided",
+      "fullTitle": "Client #auth request nonce if not provided",
+      "duration": 1,
+      "err": {}
+    },
+    {
+      "title": "request auth with credentials encrypted by nonce",
+      "fullTitle": "Client #auth request auth with credentials encrypted by nonce",
+      "duration": 1,
+      "err": {}
+    },
+    {
+      "title": "close server connection",
+      "fullTitle": "Client #close close server connection",
+      "duration": 0,
+      "err": {}
+    },
+    {
+      "title": "return a new client instance",
+      "fullTitle": "Client #create return a new client instance",
+      "duration": 0,
+      "err": {}
+    },
+    {
+      "title": "return a new collection resource",
+      "fullTitle": "Client #createResource return a new collection resource",
+      "duration": 0,
+      "err": {}
+    },
+    {
+      "title": "return a new record resource",
+      "fullTitle": "Client #createResource return a new record resource",
+      "duration": 0,
+      "err": {}
+    }
+  ]
+}
+--- stderr
+

@@ -1,0 +1,8 @@
+$ npm install --ignore-scripts --no-audit --no-fund --loglevel=error
+[exit 0 signal  1235ms]
+--- stdout
+
+added 195 packages in 1s
+
+--- stderr
+
